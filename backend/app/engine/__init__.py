@@ -1,4 +1,4 @@
-"""数据工程核心引擎：指标计算、SQL绑定、查询优化、导出分片、链路编排。"""
+"""数据工程核心引擎：指标计算、SQL绑定、查询优化、绑定条件估算、导出分片、链路编排。"""
 from __future__ import annotations
 
 from app.engine.metric_calculator import MetricCalculator

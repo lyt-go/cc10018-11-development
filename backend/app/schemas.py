@@ -84,6 +84,30 @@ class QueryOptimizeEntry(BaseModel):
     field_6: str | None = None  # 预期提升
     field_7: str | None = None  # 优化状态
 
+class OptimizeReportEntry(BaseModel):
+    """优化分析报告明细结构。"""
+
+    field_0: str | None = None  # 报告编号
+    field_1: str | None = None  # 关联接口
+    field_2: str | None = None  # 报告版本
+    field_3: str | None = None  # 样本范围
+    field_4: str | None = None  # 适用条件
+    field_5: str | None = None  # 索引建议
+    field_6: str | None = None  # 收益核验
+    field_7: str | None = None  # 优化状态
+
+class PlanDecisionEntry(BaseModel):
+    """执行计划决策明细结构。"""
+
+    field_0: str | None = None  # 决策编号
+    field_1: str | None = None  # 关联接口
+    field_2: str | None = None  # 请求类别
+    field_3: str | None = None  # 决策结果
+    field_4: str | None = None  # 扫描节点
+    field_5: str | None = None  # 估算行数
+    field_6: str | None = None  # 报告版本
+    field_7: str | None = None  # 回退原因
+
 class ApiSubscribeEntry(BaseModel):
     """订阅记录明细结构。"""
 

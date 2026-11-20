@@ -107,6 +107,54 @@ const modules: ModuleCase[] = [
     "shape": "crud-table"
   },
   {
+    "key": "optimize_report",
+    "fields": [
+      "报告编号",
+      "关联接口",
+      "报告版本",
+      "样本范围",
+      "适用条件",
+      "索引建议",
+      "收益核验",
+      "优化状态"
+    ],
+    "actions": [
+      "开始分析",
+      "发布报告",
+      "停用报告"
+    ],
+    "actionTargets": [
+      "分析中",
+      "已发布",
+      "已停用"
+    ],
+    "shape": "crud-table"
+  },
+  {
+    "key": "plan_decision",
+    "fields": [
+      "决策编号",
+      "关联接口",
+      "请求类别",
+      "决策结果",
+      "扫描节点",
+      "估算行数",
+      "报告版本",
+      "回退原因"
+    ],
+    "actions": [
+      "执行核对",
+      "确认采纳",
+      "归档记录"
+    ],
+    "actionTargets": [
+      "已核对",
+      "已确认",
+      "已归档"
+    ],
+    "shape": "crud-table"
+  },
+  {
     "key": "api_subscribe",
     "fields": [
       "订阅编号",

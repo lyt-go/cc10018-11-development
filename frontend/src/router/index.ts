@@ -5,6 +5,8 @@ const MetricDomain = () => import('@/views/metric_domain/index.vue')
 const DerivedMetric = () => import('@/views/derived_metric/index.vue')
 const ApiService = () => import('@/views/api_service/index.vue')
 const QueryOptimize = () => import('@/views/query_optimize/index.vue')
+const OptimizeReport = () => import('@/views/optimize_report/index.vue')
+const PlanDecision = () => import('@/views/plan_decision/index.vue')
 const ApiSubscribe = () => import('@/views/api_subscribe/index.vue')
 const CallCredential = () => import('@/views/call_credential/index.vue')
 const DatasourceConnect = () => import('@/views/datasource_connect/index.vue')
@@ -28,6 +30,8 @@ const router = createRouter({
     { path: '/derived_metric', name: 'derived_metric', component: DerivedMetric },
     { path: '/api_service', name: 'api_service', component: ApiService },
     { path: '/query_optimize', name: 'query_optimize', component: QueryOptimize },
+    { path: '/optimize_report', name: 'optimize_report', component: OptimizeReport },
+    { path: '/plan_decision', name: 'plan_decision', component: PlanDecision },
     { path: '/api_subscribe', name: 'api_subscribe', component: ApiSubscribe },
     { path: '/call_credential', name: 'call_credential', component: CallCredential },
     { path: '/datasource_connect', name: 'datasource_connect', component: DatasourceConnect },

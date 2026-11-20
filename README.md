@@ -53,6 +53,8 @@ npm run dev
 | 派生指标 | `derived_metric` | 派生指标 | 指标编号、父指标编号、计算公式 |
 | API服务 | `api_service` | 数据接口 | 接口编号、接口名称、查询SQL |
 | 查询优化 | `query_optimize` | 优化建议 | 建议编号、关联接口、慢查询摘要 |
+| 优化分析报告 | `optimize_report` | 分析报告 | 报告编号、报告版本、适用条件 |
+| 执行计划视图 | `plan_decision` | 计划决策 | 决策编号、决策结果、扫描节点 |
 | 接口订阅 | `api_subscribe` | 订阅记录 | 订阅编号、接口编号、订阅方 |
 | 调用凭证 | `call_credential` | 访问凭证 | 凭证编号、订阅方、凭证摘要 |
 | 数据源连接 | `datasource_connect` | 连接配置 | 连接编号、数据源类型、连接地址 |
